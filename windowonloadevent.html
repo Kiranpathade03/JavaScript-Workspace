@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: tahoma;
+        font-size: 1.2em;
+    }
+    
+    div#wrapper {
+        margin: 50px auto 0 auto;
+        width: 80%;
+    }
+    
+    div#wrapper>div#button {
+        display: inline-block;
+        line-height: 60px;
+        padding: 0px 30px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    .black {
+        color: white;
+        background-color: black;
+    }
+    
+    .white {
+        color: black;
+        background-color: white;
+    }
+</style>
+
+<body id="body">
+    <div id="wrapper">
+        <div id="button" class="black">Click and Change Color</div>
+        <div id="content">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam fuga laudantium dolore quae, pariatur ipsa consequatur dolorum? Aut eaque earum repellat at voluptatem error amet vero eligendi exercitationem fuga, aspernatur consequuntur
+                delectus quibusdam ipsum dignissimos velit in beatae. Laborum minus error provident alias soluta nostrum, sunt ut repudiandae expedita commodi hic obcaecati nemo ex suscipit dolorum. Amet perferendis asperiores mollitia. Suscipit dolor
+                voluptatem dolorum eos soluta molestias maxime sed.</p>
+        </div>
+    </div>
+    <script>
+        var body = document.getElementById('body');
+        var button = document.getElementById('buttton');
+        button.onclick = function fun() {
+            if (body.className == 'black') {
+                body.className = 'white';
+                button.className = 'black';
+
+            } else {
+                body.className = 'black';
+                button.className = 'white';
+            }
+        }
+    </script>
+</body>
+
+</html>

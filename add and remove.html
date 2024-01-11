@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="languages">
+        <li>javascript</li>
+    </ul>
+    <script>
+        function add(addlan) {
+            let li = document.createElement('li')
+            li.innerHTML = addlan;
+            document.querySelector('.languages').appendChild(li)
+        }
+        add("")
+        add("")
+
+        function add2(langname) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langname));
+            document.querySelector('.languages').appendChild(li)
+        }
+        add2(" java");
+
+
+        const forthchild = document.querySelector('li:nth-child(4)')
+        forthchild.innerHTML = "python"
+    </script>
+</body>
+
+</html>

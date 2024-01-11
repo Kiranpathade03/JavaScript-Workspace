@@ -1,0 +1,15 @@
+<button onclick="openwindow()">Open Window</button>
+<button onclick="closeWindow()">Close Window</button>
+
+
+<script>
+    var Mywindow;
+
+    function openwindow() {
+        Mywindow = window.open('https://www.example.com', '', 'height=500px,width=500px,left=200px,top=200px');
+    }
+
+    function closeWindow() {
+        Mywindow.close();
+    }
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- createing a div clone -->
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Log In</li>
+    </ul>
+
+
+    <ol id="ol">
+        <li>Home</li>
+        <li>Find</li>
+        <li>About US</li>
+        <li>Login</li>
+    </ol>
+    <p id="hey"></p>
+    <script>
+        //let menu = document.getElementById('menu');
+        //let newdiv = menu.cloneNode(true);
+        //newdiv.id = 'ok'
+        //document.body.appendChild(newdiv)
+        let ol = document.getElementById('ol');
+        let newol = ol.cloneNode(true);
+        ol.id = 'newol'
+        document.body.appendChild(newol)
+
+
+        //creating a neww text node
+
+        let newnode = document.createTextNode("Hello my name is kiran")
+        console.log(newnode);
+
+
+
+        //text content
+
+        let p = document.getElementById("hey");
+        p.textContent = "Hello Kiran"
+    </script>
+</body>
+
+</html>

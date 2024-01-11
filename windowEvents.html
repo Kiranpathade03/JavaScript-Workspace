@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openwindow()">Open Window</button>
+    <button onclick="closewindow()">Close Window</button>
+
+
+    <script>
+        var Kiran;
+
+        function openwindow() {
+            Kiran = window.open('https://www.google.com', '', 'width=500px,height=500px,top=200px,left=200px'); //blank means other windows
+        }
+
+        function closewindow() {
+            Kiran.close();
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Open and Close Window Example</title>
+</head>
+
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+
+    <script>
+        let openedWindow;
+
+        function openWindow() {
+            // Open a new window with a specific URL
+            openedWindow = window.open('https://www.example.com', '_blank', 'width=400,height=300');
+        }
+
+        function closeWindow() {
+
+            // Close the previously opened window
+            openedWindow.close();
+        }
+    </script>
+</body>
+
+</html>

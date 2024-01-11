@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box {
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        margin: 40px 0 0 20px;
+    }
+</style>
+
+<body>
+    <div id="box" onclick="boxclick()"> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="box" oncontextmenu="boxclick()"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="box" ondblclick="boxclick()">
+
+            </div>
+            <script>
+                function boxclick() {
+                    alert("hello")
+                }
+            </script>
+</body>
+
+</html>

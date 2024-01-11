@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program to calculate multiplication and division of two numbers </title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br><br> 2nd Number: <input type="text" id="secondNumber" /><br><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="Divideby()" Value="Divide" />
+        <input type="button" onClick="Addby()" Value="Addition" />
+        <input type="button" onClick="Substractby()" Value="Substract" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function Addby() {
+
+            num1 = document.getElementById('firstNumber').value;
+            num2 = document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML = num1 + num2;
+
+        }
+
+        function Substractby() {
+
+            num1 = document.getElementById('firstNumber').value;
+            num2 = document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML = num1 - num2;
+        }
+
+        function Multiplyby() {
+
+            num1 = document.getElementById('firstNumber').value;
+            num2 = document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML = num1 * num2;
+        }
+
+        function Divideby() {
+
+            num1 = document.getElementById('firstNumber').value;
+            num2 = document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML = num1 / num2;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #id1,
+    #id3,
+    #id4 {
+        height: 300px;
+    }
+    
+    .cs1 {
+        height: 900px;
+    }
+</style>
+
+<body id="">
+    <div id="id1"></div><br><br>
+    <div id="id3"></div><br><br>
+    <div id="id4"></div><br> <br>
+    <div class="ok"> </div><br><br>
+    <div class="class2"></div><br><br>
+    <div class="class3"></div><br><br>
+    <div></div>
+    <script>
+        var k = document.querySelector('#id1').style.background = 'red';
+        let p = document.querySelectorAll('#id1,#id3,#id4').style.background = 'red'
+    </script>
+</body>
+
+</html>

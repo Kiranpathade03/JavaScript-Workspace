@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun()">Click Here</button>
+    <p id="add"></p>
+    <script>
+        function outer() {
+            let counter = 0;
+
+            function inner() {
+                counter++;
+                console.log(counter);
+                return counter;
+            }
+            return inner;
+        }
+        const fn = outer();
+
+        function fun() {
+            const display = fn();
+            document.getElementById('add').innerHTML = display;
+        }
+    </script>
+</body>
+
+</html>
